@@ -1,0 +1,12 @@
+function [matriz] = cand_dc(equipment, Xmax)
+
+matriz = [];
+for i=1:numel(Xmax)
+    for j=1:Xmax(i)
+        matriz = [matriz;equipment(i,:)];
+        matinv = [matriz;equipment(i,:)];
+    end
+end
+
+end
+
